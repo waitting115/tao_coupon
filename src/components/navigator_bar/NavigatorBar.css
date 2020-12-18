@@ -1,0 +1,22 @@
+.navigator-bar-out {
+
+    background-color: var(--gray);
+}
+.navigator-bar-in {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigator-bar-item {
+    padding: .5rem;
+
+    transition: color .5s;
+
+    color: #fff;
+
+    font-size: 1rem;
+}
+.navigator-bar-item:hover {
+    color: var(--dark-gray)
+}

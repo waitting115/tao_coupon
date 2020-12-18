@@ -1,0 +1,114 @@
+.tool-bar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 10px;
+}
+.tool-left {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.tool-left {
+
+    font-size: 1.2rem;
+}
+.tool-ul {
+    margin-left: 10px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tool-li,
+.tool-li-default {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    cursor: pointer;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.tool-li-span {
+    font-size: .8rem;
+}
+.tool-li-img {
+    width: .8rem;
+    height: .8rem;
+}
+.tool-right {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.tool-right-text {
+    margin-right: 10px;
+    font-size: .8rem;
+}
+.tool-right-btn {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    overflow: hidden;
+
+    position: relative;
+
+    width: 40px;
+    height: 20px;
+    /* border: 1px solid #95ec69; */
+    background-color: #ccc;
+    border-radius: 50px;
+
+    cursor: pointer;
+}
+.tool-right-btn-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 20px;
+    border-radius: 50px;
+
+    background-color: #95ec69;
+
+    transition: all .5s ease;
+}
+.tool-right-btn-bg-long {
+    width: 40px;
+}
+.tool-right-btn-ball {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 2px;
+
+    z-index: 2;
+
+    transition: all .5s ease;
+}
+.absolute-right {
+    /* left: auto;
+    right: 0!important; */
+    margin-left: 22px;
+}
