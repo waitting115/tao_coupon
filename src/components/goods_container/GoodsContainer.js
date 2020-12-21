@@ -153,14 +153,14 @@ class GoodsContainer extends React.Component {
         const allGoods = [];
         this.state.allGoods.forEach((v, i) => {
             allGoods.push(
-                <Goods goodsMsg={v} />
+                <Goods goodsMsg={v} key={v.id}/>
             );
         });
         return (
             <div className="wrapper">
                 <div className="container">
                     <ToolBar/>
-                    <div className="goods-container">
+                    <div className="goods-warpper">
                         {allGoods}
                     </div>
                 </div>

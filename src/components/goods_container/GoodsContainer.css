@@ -1,4 +1,4 @@
-.goods-container {
+.goods-warpper {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;

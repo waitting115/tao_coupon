@@ -91,7 +91,11 @@ input:-webkit-autofill:focus {
 }
 @media (min-width: 1200px) {
   .container {
-      width: 1200px;
+      width: 100%;
+      margin-left: 20px;
+      margin-right: 20px;
+
+      box-sizing: content-box;
   }
 }
 /* @media (min-width: 768px) {
