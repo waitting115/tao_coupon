@@ -48,9 +48,9 @@ class ToolBar extends React.Component {
             onlySeeHaveCoupon: {
                 title: "只看有券",
                 state: false
-            }
+            },
+            title: "商品"
         };
-        this.title = "优选商品";
     }
 
     componentDidMount() {
@@ -58,6 +58,11 @@ class ToolBar extends React.Component {
         var toolRightBtn = document.querySelector('.tool-right-btn');
         var toolRightBtnBall = document.querySelector('.tool-right-btn-ball');
         var toolRightBtnBg = document.querySelector('.tool-right-btn-bg');
+
+        // title赋值
+        this.setState({
+            title: this.props.title
+        })
         
         // 几个排序的点击函数
         function toolsClick(v) {
@@ -127,7 +132,7 @@ class ToolBar extends React.Component {
             <div className="wrapper">
                 <div className="container tool-bar">
                     <div className="tool-left">
-                        <span className="tool-title">{this.title}</span>
+                        <span className="tool-title">{this.state.title}</span>
                         <ul className="tool-ul">
                             <li value="default" data-id="default" className="tool-li-default">
                                 <span className="tool-li-span">默认排序</span>

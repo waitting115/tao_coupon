@@ -2,6 +2,8 @@
     box-sizing: border-box;
 
     padding: 10px;
+
+    cursor: pointer;
 }
 @media (min-width: 1200px) {
     .goods-container {
@@ -46,14 +48,15 @@
     padding-left: 5px;
     padding-right: 5px;
 }
-.goods-content-bar1,
-.goods-content-bar2,
-.goods-content-bar3,
-.goods-content-bar4{
+.goods-content > div{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+
+    margin-top: 3px;
+    margin-bottom: 3px;
+    /* border-bottom: 1px solid #ccc; */
 
     font-size: .8rem;
 }
@@ -80,7 +83,7 @@
     width: 4rem;
 }
 .goods-content-title {
-    width: 10rem;
+    /* width: 10rem; */
     
     white-space: nowrap;
     overflow: hidden;
@@ -101,14 +104,31 @@
 .goods-content-couponsPrice {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 
     width: 5rem;
-    height: 2rem;
+    /* height: 2rem; */
+    padding-left: 5px;
 
     background: url('../../public/icons/coupons.png') center center no-repeat;
     background-size: cover;
 
     color: #fff;
+
+    font-weight: 600;
+}
+.goods-content-shopName {
+    font-weight: 600;
+}
+.goods-content-btn {
+    padding: 2px 9px;
+
+    border: 0;
+    border-radius: 5px;
+
+    color: #fff;
+    background-color: #ccc;
+
+    cursor: pointer;
 }

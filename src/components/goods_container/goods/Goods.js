@@ -68,13 +68,17 @@ class Goods extends React.Component {
                             </div>
                         </div>
                         <div className="goods-content-bar3">
-                            <div className="goods-content-shopName"></div>
+                            <div className="goods-content-shopName">
+                            {goodsMsg.shopName}
+                            </div>
                             <div className="goods-content-monthlySale">
-                                <span>月销：</span>
+                                <span>月销：{goodsMsg.monthlySale}</span>
                             </div>
                         </div>
                         <div className="goods-content-bar4">
-                            <div className="goods-content-address"></div>
+                            <div className="goods-content-address">
+                                {goodsMsg.address}
+                            </div>
                             <button className="goods-content-btn">搜相似</button>
                         </div>
                     </div>
